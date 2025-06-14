@@ -23,7 +23,7 @@ def there_is_a_question(txt):
     return matched_questions
 
 
-def there_is_a_exclamation(txt):
+def there_is_an_exclamation(txt):
     # This pattern searches for any sentence that starts with ¡ and ends with !
     # or any sentence that ends with an exclamation mark.
     # With this we ensure that we gonna find exclamations in
@@ -50,7 +50,7 @@ def what_we_found():
     # This function will use the functions to get the lens
     # of all the other, and start the program
     questions = there_is_a_question(content)
-    exclamations = there_is_a_exclamation(content)
+    exclamations = there_is_an_exclamation(content)
     abbreviations = there_is_a_abbreviation(content)
 
     print("########################### " "Results that what we fund "

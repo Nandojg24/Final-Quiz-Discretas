@@ -11,6 +11,8 @@ def validate_credentials(username, password):
     # are valids according to the riules of the data base of the library
     # The username must start with a 2 digit number between 00 and 25,
     # and the password must start with 2 letters and then the username.
+    # I use regular expresions to validate the credentials because
+    # they are very useful to validate patterns in strings.
     validation = 0
     if len(username) == 7 and re.fullmatch(r"^([0-1]\d{6}|2[0-5]\d{5})",
                                            username):
@@ -26,6 +28,11 @@ def welcome_message():
     # This function is to print the welcome message of the library
     print("####"*6, " Welcome to the BuPen Univalle ", "####"*6, "\n")
     print(" This is the library of the University of Valle \n")
+
+    # With the while loop, the user can choose
+    # to turn on or off the BuPen system
+    # and when the system is turned on,
+    # the user will be able to enter their credentials
     while True:
         print("Do you want to turn on the system? \n"
               "If you want to turn on the system, please type 'yes' \n"
@@ -49,6 +56,8 @@ def welcome_message():
 
 
 def start_up():
+    # This function is to enter to the BuPen system
+    # and to validate the credentials of the user
     max_attempts = 4
     attempts = 0
     credentials_rules = ("To use the BuPen system,"
@@ -60,6 +69,8 @@ def start_up():
     print(credentials_rules)
     time.sleep(2)
 
+    # I decide to use attempts to limit the number of tries,
+    # and make the BuPen system more secure.
     while attempts < max_attempts:
         username = input("Please enter your username: ").strip()
         password = input("Please enter your password: ").strip()
