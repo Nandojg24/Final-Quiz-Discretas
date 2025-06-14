@@ -16,7 +16,6 @@ This project is part of the final assignment for the course **Discrete Mathemati
   - System states from OFF to verifying card
   - Accepting valid cards
   - Rejecting invalid cards
-  - A OTP verification
 - Deliverables include a transition table, state graph (PDF), and programmatic simulation.
 
 ### 💡 Technologies
