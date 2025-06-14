@@ -29,7 +29,7 @@ def welcome_message():
     while True:
         print("Do you want to turn on the system? \n"
               "If you want to turn on the system, please type 'yes' \n"
-              "If you want to turn off the system, please type 'no'")
+              "If you want to keep off the system, please type 'no'")
         starting_up = input(": ").strip().lower()
         if starting_up == "yes":
             print("The BuPen system is starting up...\n")
