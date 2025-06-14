@@ -4,13 +4,13 @@ This project is part of the final assignment for the course **Discrete Mathemati
 
 ## 📋 Activities Overview
 
-### ✅ 3. Regex in Code
+### ✅ 1. Regex in Code
 - A custom program will be developed in Python.
 - This program will load the `.txt` document and extract:
   - Interrogative and exclamatory sentences
   - Abbreviations
 
-### ✅ 4. AFD Simulation
+### ✅ 2. AFD Simulation
 - Design a **Deterministic Finite Automaton (DFA)** to simulate the access control system of a fictional university library called **BuPen**.
 - The DFA will model:
   - System states from OFF to verifying card
